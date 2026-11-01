@@ -1,0 +1,225 @@
+{
+ "dataset": "Biology",
+ "stats": {
+  "train_oof": {
+   "n": 11144,
+   "image_rows": 3750,
+   "acc_all": 74.92,
+   "acc_image": 72.16,
+   "gold_in_top5_image": 95.15,
+   "image_wrong_but_in_top5": 862,
+   "oracle_rerank_gain_points_all": 7.74
+  },
+  "val_select": {
+   "n": 696,
+   "image_rows": 238,
+   "acc_all": 78.02,
+   "acc_image": 79.83,
+   "gold_in_top5_image": 97.06,
+   "image_wrong_but_in_top5": 41,
+   "oracle_rerank_gain_points_all": 5.89
+  }
+ },
+ "fit_rows": 3455,
+ "dev_rows": 295,
+ "val_select_image_rows": 238,
+ "teacher_top1_val_image_acc": 80.25,
+ "runs": {
+  "text_only": {
+   "mean_acc": {
+    "val_real": 78.15
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "best_epoch": 1,
+     "dev_acc": 74.24,
+     "val_real": {
+      "acc": 78.15,
+      "changed": 5,
+      "fix": 0,
+      "harm": 4
+     }
+    },
+    {
+     "seed": 1,
+     "best_epoch": 3,
+     "dev_acc": 74.58,
+     "val_real": {
+      "acc": 78.99,
+      "changed": 22,
+      "fix": 8,
+      "harm": 10
+     }
+    },
+    {
+     "seed": 2,
+     "best_epoch": 3,
+     "dev_acc": 73.22,
+     "val_real": {
+      "acc": 77.31,
+      "changed": 23,
+      "fix": 6,
+      "harm": 12
+     }
+    }
+   ]
+  },
+  "visual_native": {
+   "mean_acc": {
+    "val_real": 77.59,
+    "val_shuffled": 78.15,
+    "val_no_image": 78.43
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "best_epoch": 1,
+     "dev_acc": 72.88,
+     "val_real": {
+      "acc": 76.05,
+      "changed": 13,
+      "fix": 0,
+      "harm": 9
+     },
+     "val_shuffled": {
+      "acc": 77.31,
+      "changed": 12,
+      "fix": 2,
+      "harm": 8
+     },
+     "val_no_image": {
+      "acc": 78.57,
+      "changed": 4,
+      "fix": 0,
+      "harm": 3
+     }
+    },
+    {
+     "seed": 1,
+     "best_epoch": 1,
+     "dev_acc": 73.22,
+     "val_real": {
+      "acc": 80.67,
+      "changed": 14,
+      "fix": 5,
+      "harm": 3
+     },
+     "val_shuffled": {
+      "acc": 79.41,
+      "changed": 11,
+      "fix": 3,
+      "harm": 4
+     },
+     "val_no_image": {
+      "acc": 78.99,
+      "changed": 10,
+      "fix": 2,
+      "harm": 4
+     }
+    },
+    {
+     "seed": 2,
+     "best_epoch": 2,
+     "dev_acc": 75.93,
+     "val_real": {
+      "acc": 76.05,
+      "changed": 19,
+      "fix": 1,
+      "harm": 10
+     },
+     "val_shuffled": {
+      "acc": 77.73,
+      "changed": 21,
+      "fix": 4,
+      "harm": 9
+     },
+     "val_no_image": {
+      "acc": 77.73,
+      "changed": 16,
+      "fix": 2,
+      "harm": 7
+     }
+    }
+   ]
+  },
+  "visual_high": {
+   "mean_acc": {
+    "val_real": 77.31,
+    "val_shuffled": 77.31,
+    "val_no_image": 77.73
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "best_epoch": 6,
+     "dev_acc": 73.9,
+     "val_real": {
+      "acc": 75.21,
+      "changed": 31,
+      "fix": 7,
+      "harm": 18
+     },
+     "val_shuffled": {
+      "acc": 75.63,
+      "changed": 26,
+      "fix": 5,
+      "harm": 15
+     },
+     "val_no_image": {
+      "acc": 76.47,
+      "changed": 30,
+      "fix": 8,
+      "harm": 16
+     }
+    },
+    {
+     "seed": 1,
+     "best_epoch": 1,
+     "dev_acc": 73.56,
+     "val_real": {
+      "acc": 79.41,
+      "changed": 8,
+      "fix": 2,
+      "harm": 3
+     },
+     "val_shuffled": {
+      "acc": 78.57,
+      "changed": 8,
+      "fix": 1,
+      "harm": 4
+     },
+     "val_no_image": {
+      "acc": 78.57,
+      "changed": 5,
+      "fix": 0,
+      "harm": 3
+     }
+    },
+    {
+     "seed": 2,
+     "best_epoch": 6,
+     "dev_acc": 73.22,
+     "val_real": {
+      "acc": 77.31,
+      "changed": 26,
+      "fix": 6,
+      "harm": 12
+     },
+     "val_shuffled": {
+      "acc": 77.73,
+      "changed": 26,
+      "fix": 8,
+      "harm": 13
+     },
+     "val_no_image": {
+      "acc": 78.15,
+      "changed": 25,
+      "fix": 7,
+      "harm": 11
+     }
+    }
+   ]
+  }
+ }
+}

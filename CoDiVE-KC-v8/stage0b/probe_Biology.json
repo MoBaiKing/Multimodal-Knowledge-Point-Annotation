@@ -1,0 +1,130 @@
+{
+ "dataset": "Biology",
+ "val_select_image_rows": 238,
+ "teacher_top1_val_image_acc": 80.25,
+ "rows_without_valid_image": {
+  "train": 0,
+  "val_select": 0
+ },
+ "hq_cosine_txt_vs_mm_val": 0.9793,
+ "runs": {
+  "probe_text": {
+   "mean_acc": {
+    "val_real": 77.45
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "best_epoch": 1,
+     "dev_acc": 73.9,
+     "val_real": {
+      "acc": 78.15,
+      "changed": 6,
+      "fix": 0,
+      "harm": 4
+     }
+    },
+    {
+     "seed": 1,
+     "best_epoch": 2,
+     "dev_acc": 73.22,
+     "val_real": {
+      "acc": 78.57,
+      "changed": 11,
+      "fix": 2,
+      "harm": 5
+     }
+    },
+    {
+     "seed": 2,
+     "best_epoch": 4,
+     "dev_acc": 74.92,
+     "val_real": {
+      "acc": 75.63,
+      "changed": 35,
+      "fix": 8,
+      "harm": 18
+     }
+    }
+   ]
+  },
+  "probe_joint": {
+   "mean_acc": {
+    "val_real": 77.17,
+    "val_shuffled": 76.89,
+    "val_no_image": 78.01
+   },
+   "runs": [
+    {
+     "seed": 0,
+     "best_epoch": 4,
+     "dev_acc": 76.27,
+     "val_real": {
+      "acc": 77.31,
+      "changed": 24,
+      "fix": 6,
+      "harm": 12
+     },
+     "val_shuffled": {
+      "acc": 76.89,
+      "changed": 26,
+      "fix": 6,
+      "harm": 13
+     },
+     "val_no_image": {
+      "acc": 78.57,
+      "changed": 22,
+      "fix": 6,
+      "harm": 9
+     }
+    },
+    {
+     "seed": 1,
+     "best_epoch": 2,
+     "dev_acc": 73.56,
+     "val_real": {
+      "acc": 78.15,
+      "changed": 12,
+      "fix": 3,
+      "harm": 7
+     },
+     "val_shuffled": {
+      "acc": 77.73,
+      "changed": 12,
+      "fix": 2,
+      "harm": 7
+     },
+     "val_no_image": {
+      "acc": 78.57,
+      "changed": 9,
+      "fix": 2,
+      "harm": 5
+     }
+    },
+    {
+     "seed": 2,
+     "best_epoch": 4,
+     "dev_acc": 74.92,
+     "val_real": {
+      "acc": 76.05,
+      "changed": 32,
+      "fix": 7,
+      "harm": 16
+     },
+     "val_shuffled": {
+      "acc": 76.05,
+      "changed": 33,
+      "fix": 8,
+      "harm": 17
+     },
+     "val_no_image": {
+      "acc": 76.89,
+      "changed": 30,
+      "fix": 7,
+      "harm": 14
+     }
+    }
+   ]
+  }
+ }
+}

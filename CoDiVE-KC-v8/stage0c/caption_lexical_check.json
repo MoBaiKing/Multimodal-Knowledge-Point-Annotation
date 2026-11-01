@@ -1,0 +1,28 @@
+{
+ "Math": {
+  "rows": 550,
+  "real": {
+   "gold_higher": 156,
+   "pred_higher": 139,
+   "tie": 255
+  },
+  "donor": {
+   "gold_higher": 103,
+   "pred_higher": 84,
+   "tie": 363
+  }
+ },
+ "Biology": {
+  "rows": 862,
+  "real": {
+   "gold_higher": 285,
+   "pred_higher": 314,
+   "tie": 263
+  },
+  "donor": {
+   "gold_higher": 148,
+   "pred_higher": 152,
+   "tie": 562
+  }
+ }
+}

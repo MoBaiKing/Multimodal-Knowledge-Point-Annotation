@@ -1,0 +1,91 @@
+{
+  "queue_id": "codive_kc_v8_concept_evidence_20261101",
+  "server": "jnu",
+  "owner": "邓郁霖",
+  "python": "/data/dyl/CoDiVE-KC-v7/.venv/bin/python",
+  "reservation_db": "/data/gpu_booking/reservations.sqlite",
+  "focusforge_feed": "/data/dyl/focusforge/focusforge_task_feed.py",
+  "queue_dir": "runs/queue",
+  "candidate_gpus": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "poll_seconds": 5,
+  "save_margin_seconds": 300,
+  "release_margin_seconds": 60,
+  "max_stop_seconds": 60,
+  "retry_seconds": 60,
+  "max_attempts": 3,
+  "gpu_lock_dirs": [
+    "/data/dyl/LEDGER-FND/workspaces/scheduled/.gpu_dispatch_locks",
+    "/data/dyl/reproduce2/gpu_locks"
+  ],
+  "gpu_uuid_lock_dirs": [
+    "/data/dyl/LEDGER-FND/ablation/RQ2/queues/locks"
+  ],
+  "jobs": [
+    {
+      "id": "v8_Math_concept_evidence_seed200408",
+      "dataset": "Math",
+      "variant": "concept_evidence",
+      "seed": 200408,
+      "kind": "main",
+      "enabled": true,
+      "priority": 10,
+      "family": "CoDiVE-KC-v8",
+      "title": "CoDiVE-KC v8 Math concept_evidence seed200408（题干 token 候选对证据 + 图像证据，非RL，训练后GPU最终测试）",
+      "config": "/data/dyl/CoDiVE-KC-v8/config/math_concept_evidence_seed200408.json",
+      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Math/concept_evidence/seed200408",
+      "hold_reason": "",
+      "script": "scripts/worker.py"
+    },
+    {
+      "id": "v8_Biology_concept_evidence_seed200408",
+      "dataset": "Biology",
+      "variant": "concept_evidence",
+      "seed": 200408,
+      "kind": "main",
+      "enabled": true,
+      "priority": 11,
+      "family": "CoDiVE-KC-v8",
+      "title": "CoDiVE-KC v8 Biology concept_evidence seed200408（题干 token 候选对证据 + 图像证据，非RL，训练后GPU最终测试）",
+      "config": "/data/dyl/CoDiVE-KC-v8/config/biology_concept_evidence_seed200408.json",
+      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Biology/concept_evidence/seed200408",
+      "hold_reason": "",
+      "script": "scripts/worker.py"
+    },
+    {
+      "id": "v8_Math_concept_evidence_seed200409",
+      "dataset": "Math",
+      "variant": "concept_evidence",
+      "seed": 200409,
+      "kind": "main",
+      "enabled": true,
+      "priority": 12,
+      "family": "CoDiVE-KC-v8",
+      "title": "CoDiVE-KC v8 Math concept_evidence seed200409（题干 token 候选对证据 + 图像证据，非RL，训练后GPU最终测试）",
+      "config": "/data/dyl/CoDiVE-KC-v8/config/math_concept_evidence_seed200409.json",
+      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Math/concept_evidence/seed200409",
+      "hold_reason": "",
+      "script": "scripts/worker.py"
+    },
+    {
+      "id": "v8_Biology_concept_evidence_seed200409",
+      "dataset": "Biology",
+      "variant": "concept_evidence",
+      "seed": 200409,
+      "kind": "main",
+      "enabled": true,
+      "priority": 13,
+      "family": "CoDiVE-KC-v8",
+      "title": "CoDiVE-KC v8 Biology concept_evidence seed200409（题干 token 候选对证据 + 图像证据，非RL，训练后GPU最终测试）",
+      "config": "/data/dyl/CoDiVE-KC-v8/config/biology_concept_evidence_seed200409.json",
+      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Biology/concept_evidence/seed200409",
+      "hold_reason": "",
+      "script": "scripts/worker.py"
+    }
+  ],
+  "max_jobs_per_gpu": 1
+}
