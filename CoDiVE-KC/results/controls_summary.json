@@ -1,0 +1,3978 @@
+{
+  "datasets": {
+    "Math": {
+      "completed_seeds": [
+        200404,
+        200405,
+        200406,
+        200407,
+        200408,
+        200409
+      ],
+      "missing_seeds": [],
+      "variants": {
+        "base": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 77.23,
+                "weighted_f1": 77.03,
+                "macro_f1": 73.58
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.21,
+                "weighted_f1": 76.97,
+                "macro_f1": 73.26
+              },
+              "val_select": {
+                "accuracy": 77.05,
+                "weighted_f1": 77.05,
+                "macro_f1": 71.09
+              },
+              "val_calibration": {
+                "accuracy": 78.2,
+                "weighted_f1": 78.66,
+                "macro_f1": 72.0
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200405": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 76.74,
+                "weighted_f1": 76.54,
+                "macro_f1": 73.24
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.8,
+                "weighted_f1": 76.61,
+                "macro_f1": 73.27
+              },
+              "val_select": {
+                "accuracy": 77.54,
+                "weighted_f1": 77.27,
+                "macro_f1": 71.09
+              },
+              "val_calibration": {
+                "accuracy": 77.87,
+                "weighted_f1": 78.28,
+                "macro_f1": 70.95
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200406": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 77.31,
+                "weighted_f1": 77.1,
+                "macro_f1": 73.95
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.17,
+                "macro_f1": 73.97
+              },
+              "val_select": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.4,
+                "macro_f1": 72.18
+              },
+              "val_calibration": {
+                "accuracy": 79.34,
+                "weighted_f1": 79.53,
+                "macro_f1": 71.92
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200407": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 76.41,
+                "weighted_f1": 76.24,
+                "macro_f1": 72.54
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.48,
+                "weighted_f1": 76.32,
+                "macro_f1": 72.56
+              },
+              "val_select": {
+                "accuracy": 77.21,
+                "weighted_f1": 77.21,
+                "macro_f1": 72.09
+              },
+              "val_calibration": {
+                "accuracy": 77.05,
+                "weighted_f1": 77.32,
+                "macro_f1": 70.55
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200408": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 77.23,
+                "weighted_f1": 77.27,
+                "macro_f1": 74.31
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.21,
+                "weighted_f1": 77.24,
+                "macro_f1": 74.05
+              },
+              "val_select": {
+                "accuracy": 75.9,
+                "weighted_f1": 75.68,
+                "macro_f1": 69.79
+              },
+              "val_calibration": {
+                "accuracy": 76.72,
+                "weighted_f1": 76.42,
+                "macro_f1": 69.94
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200409": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 76.58,
+                "weighted_f1": 76.41,
+                "macro_f1": 73.46
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.56,
+                "weighted_f1": 76.38,
+                "macro_f1": 73.21
+              },
+              "val_select": {
+                "accuracy": 76.72,
+                "weighted_f1": 76.18,
+                "macro_f1": 70.77
+              },
+              "val_calibration": {
+                "accuracy": 78.85,
+                "weighted_f1": 79.14,
+                "macro_f1": 73.38
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 77.11,
+                "std": 0.75,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.92,
+                "std": 0.71,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 71.25,
+                "std": 0.97,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 77.84,
+                "std": 1.03,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.04,
+                "std": 1.2,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 71.07,
+                "std": 0.89,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 76.98,
+                "std": 0.39,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.84,
+                "std": 0.43,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.52,
+                "std": 0.68,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 77.02,
+                "std": 0.37,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.86,
+                "std": 0.39,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.42,
+                "std": 0.61,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 0,
+            "seeds_worse_test_acc": 0
+          }
+        },
+        "knn_global": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 0.3,
+                "tau": 0.1,
+                "k": 8,
+                "beta": 1.0
+              },
+              "test": {
+                "accuracy": 77.31,
+                "weighted_f1": 77.19,
+                "macro_f1": 73.62
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.3,
+                "weighted_f1": 77.13,
+                "macro_f1": 73.3
+              },
+              "val_select": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.83,
+                "macro_f1": 72.18
+              },
+              "val_calibration": {
+                "accuracy": 78.69,
+                "weighted_f1": 78.89,
+                "macro_f1": 72.18
+              },
+              "fixes_vs_base": 17,
+              "harms_vs_base": 16
+            },
+            "200405": {
+              "params": {
+                "lam": 0.5,
+                "tau": 0.1,
+                "k": 32,
+                "beta": 0.5
+              },
+              "test": {
+                "accuracy": 77.23,
+                "weighted_f1": 76.82,
+                "macro_f1": 73.41
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.21,
+                "weighted_f1": 76.79,
+                "macro_f1": 73.15
+              },
+              "val_select": {
+                "accuracy": 78.36,
+                "weighted_f1": 77.85,
+                "macro_f1": 72.67
+              },
+              "val_calibration": {
+                "accuracy": 78.69,
+                "weighted_f1": 78.68,
+                "macro_f1": 71.65
+              },
+              "fixes_vs_base": 25,
+              "harms_vs_base": 19
+            },
+            "200406": {
+              "params": {
+                "lam": 0.2,
+                "tau": 0.1,
+                "k": 8,
+                "beta": 0.0
+              },
+              "test": {
+                "accuracy": 77.81,
+                "weighted_f1": 77.46,
+                "macro_f1": 74.09
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.54,
+                "macro_f1": 74.11
+              },
+              "val_select": {
+                "accuracy": 78.85,
+                "weighted_f1": 78.37,
+                "macro_f1": 73.96
+              },
+              "val_calibration": {
+                "accuracy": 78.85,
+                "weighted_f1": 79.0,
+                "macro_f1": 71.22
+              },
+              "fixes_vs_base": 17,
+              "harms_vs_base": 11
+            },
+            "200407": {
+              "params": {
+                "lam": 0.5,
+                "tau": 0.1,
+                "k": 8,
+                "beta": 1.0
+              },
+              "test": {
+                "accuracy": 75.59,
+                "weighted_f1": 75.14,
+                "macro_f1": 71.26
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 75.57,
+                "weighted_f1": 75.12,
+                "macro_f1": 71.05
+              },
+              "val_select": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.89,
+                "macro_f1": 72.61
+              },
+              "val_calibration": {
+                "accuracy": 77.54,
+                "weighted_f1": 77.25,
+                "macro_f1": 69.68
+              },
+              "fixes_vs_base": 31,
+              "harms_vs_base": 41
+            },
+            "200408": {
+              "params": {
+                "lam": 0.5,
+                "tau": 0.1,
+                "k": 32,
+                "beta": 0.5
+              },
+              "test": {
+                "accuracy": 76.58,
+                "weighted_f1": 76.26,
+                "macro_f1": 72.99
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.56,
+                "weighted_f1": 76.19,
+                "macro_f1": 72.67
+              },
+              "val_select": {
+                "accuracy": 77.54,
+                "weighted_f1": 77.07,
+                "macro_f1": 71.98
+              },
+              "val_calibration": {
+                "accuracy": 79.34,
+                "weighted_f1": 79.04,
+                "macro_f1": 72.51
+              },
+              "fixes_vs_base": 24,
+              "harms_vs_base": 32
+            },
+            "200409": {
+              "params": {
+                "lam": 0.5,
+                "tau": 0.1,
+                "k": 32,
+                "beta": 1.0
+              },
+              "test": {
+                "accuracy": 77.07,
+                "weighted_f1": 76.8,
+                "macro_f1": 72.87
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.05,
+                "weighted_f1": 76.74,
+                "macro_f1": 72.55
+              },
+              "val_select": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.65,
+                "macro_f1": 73.02
+              },
+              "val_calibration": {
+                "accuracy": 79.51,
+                "weighted_f1": 79.53,
+                "macro_f1": 73.3
+              },
+              "fixes_vs_base": 34,
+              "harms_vs_base": 28
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 78.13,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.8,
+                "std": 0.47,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 72.68,
+                "std": 0.77,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 1.02,
+                "std": 0.36,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.88,
+                "std": 0.32,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 1.43,
+                "std": 0.65,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 78.62,
+                "std": 0.66,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.57,
+                "std": 0.75,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 71.45,
+                "std": 1.1,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.79,
+                "std": 1.14,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.53,
+                "std": 1.22,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.38,
+                "std": 1.38,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 76.9,
+                "std": 0.85,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.57,
+                "std": 0.92,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.07,
+                "std": 1.09,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.08,
+                "std": 0.62,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.26,
+                "std": 0.73,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.45,
+                "std": 0.78,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 76.9,
+                "std": 0.88,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.55,
+                "std": 0.94,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 72.86,
+                "std": 1.13,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.11,
+                "std": 0.63,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.31,
+                "std": 0.75,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.57,
+                "std": 0.81,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 3,
+            "seeds_worse_test_acc": 2
+          }
+        },
+        "egmr_text": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 5,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.64,
+                "weighted_f1": 77.36,
+                "macro_f1": 74.14
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.62,
+                "weighted_f1": 77.3,
+                "macro_f1": 73.82
+              },
+              "val_select": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.38,
+                "macro_f1": 71.95
+              },
+              "val_calibration": {
+                "accuracy": 78.52,
+                "weighted_f1": 78.88,
+                "macro_f1": 72.29
+              },
+              "fixes_vs_base": 13,
+              "harms_vs_base": 8
+            },
+            "200405": {
+              "params": {
+                "lam": 5,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 76.82,
+                "weighted_f1": 76.51,
+                "macro_f1": 73.08
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.89,
+                "weighted_f1": 76.58,
+                "macro_f1": 73.1
+              },
+              "val_select": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.82,
+                "macro_f1": 72.62
+              },
+              "val_calibration": {
+                "accuracy": 78.03,
+                "weighted_f1": 78.4,
+                "macro_f1": 70.3
+              },
+              "fixes_vs_base": 11,
+              "harms_vs_base": 10
+            },
+            "200406": {
+              "params": {
+                "lam": 5,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.64,
+                "weighted_f1": 77.27,
+                "macro_f1": 73.91
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.7,
+                "weighted_f1": 77.34,
+                "macro_f1": 73.94
+              },
+              "val_select": {
+                "accuracy": 78.52,
+                "weighted_f1": 78.1,
+                "macro_f1": 73.09
+              },
+              "val_calibration": {
+                "accuracy": 79.84,
+                "weighted_f1": 79.87,
+                "macro_f1": 72.69
+              },
+              "fixes_vs_base": 14,
+              "harms_vs_base": 10
+            },
+            "200407": {
+              "params": {
+                "lam": 2,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 76.82,
+                "weighted_f1": 76.65,
+                "macro_f1": 72.85
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.89,
+                "weighted_f1": 76.72,
+                "macro_f1": 72.86
+              },
+              "val_select": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.35,
+                "macro_f1": 72.15
+              },
+              "val_calibration": {
+                "accuracy": 77.21,
+                "weighted_f1": 77.23,
+                "macro_f1": 70.03
+              },
+              "fixes_vs_base": 8,
+              "harms_vs_base": 3
+            },
+            "200408": {
+              "params": {
+                "lam": 10,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.4,
+                "weighted_f1": 77.15,
+                "macro_f1": 74.4
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.09,
+                "macro_f1": 74.07
+              },
+              "val_select": {
+                "accuracy": 77.21,
+                "weighted_f1": 76.88,
+                "macro_f1": 72.83
+              },
+              "val_calibration": {
+                "accuracy": 78.52,
+                "weighted_f1": 78.38,
+                "macro_f1": 70.8
+              },
+              "fixes_vs_base": 18,
+              "harms_vs_base": 16
+            },
+            "200409": {
+              "params": {
+                "lam": 20,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.81,
+                "weighted_f1": 77.36,
+                "macro_f1": 73.97
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.79,
+                "weighted_f1": 77.3,
+                "macro_f1": 73.65
+              },
+              "val_select": {
+                "accuracy": 77.21,
+                "weighted_f1": 77.06,
+                "macro_f1": 72.7
+              },
+              "val_calibration": {
+                "accuracy": 79.34,
+                "weighted_f1": 79.25,
+                "macro_f1": 72.34
+              },
+              "fixes_vs_base": 38,
+              "harms_vs_base": 23
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 77.7,
+                "std": 0.55,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.51,
+                "std": 0.47,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 72.53,
+                "std": 0.47,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.59,
+                "std": 0.44,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.58,
+                "std": 0.4,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 1.28,
+                "std": 1.11,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 78.42,
+                "std": 0.96,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.55,
+                "std": 0.95,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 71.22,
+                "std": 1.2,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.59,
+                "std": 0.69,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.51,
+                "std": 0.83,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.15,
+                "std": 0.71,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 77.26,
+                "std": 0.42,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.99,
+                "std": 0.38,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.68,
+                "std": 0.68,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.28,
+                "std": 0.15,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.15,
+                "std": 0.23,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.15,
+                "std": 0.29,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 77.3,
+                "std": 0.39,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.01,
+                "std": 0.34,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.56,
+                "std": 0.54,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.28,
+                "std": 0.14,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.14,
+                "std": 0.23,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.14,
+                "std": 0.29,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 5,
+            "seeds_worse_test_acc": 0
+          }
+        },
+        "egmr_mm": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 10,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.81,
+                "weighted_f1": 77.48,
+                "macro_f1": 74.47
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.79,
+                "weighted_f1": 77.42,
+                "macro_f1": 74.15
+              },
+              "val_select": {
+                "accuracy": 77.54,
+                "weighted_f1": 77.48,
+                "macro_f1": 72.13
+              },
+              "val_calibration": {
+                "accuracy": 78.2,
+                "weighted_f1": 78.46,
+                "macro_f1": 71.79
+              },
+              "fixes_vs_base": 22,
+              "harms_vs_base": 15
+            },
+            "200405": {
+              "params": {
+                "lam": 20,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.89,
+                "weighted_f1": 77.5,
+                "macro_f1": 74.35
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.46,
+                "macro_f1": 74.09
+              },
+              "val_select": {
+                "accuracy": 78.2,
+                "weighted_f1": 77.73,
+                "macro_f1": 73.27
+              },
+              "val_calibration": {
+                "accuracy": 77.7,
+                "weighted_f1": 78.02,
+                "macro_f1": 70.25
+              },
+              "fixes_vs_base": 37,
+              "harms_vs_base": 23
+            },
+            "200406": {
+              "params": {
+                "lam": 40,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.89,
+                "weighted_f1": 77.36,
+                "macro_f1": 73.86
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.33,
+                "macro_f1": 73.6
+              },
+              "val_select": {
+                "accuracy": 79.18,
+                "weighted_f1": 78.94,
+                "macro_f1": 74.23
+              },
+              "val_calibration": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.87,
+                "macro_f1": 70.98
+              },
+              "fixes_vs_base": 44,
+              "harms_vs_base": 37
+            },
+            "200407": {
+              "params": {
+                "lam": 10,
+                "m": 3,
+                "beta": 1.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 76.82,
+                "weighted_f1": 76.45,
+                "macro_f1": 72.89
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.8,
+                "weighted_f1": 76.43,
+                "macro_f1": 72.68
+              },
+              "val_select": {
+                "accuracy": 77.7,
+                "weighted_f1": 77.87,
+                "macro_f1": 72.95
+              },
+              "val_calibration": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.1,
+                "macro_f1": 69.68
+              },
+              "fixes_vs_base": 29,
+              "harms_vs_base": 24
+            },
+            "200408": {
+              "params": {
+                "lam": 10,
+                "m": 8,
+                "beta": 1.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 76.99,
+                "weighted_f1": 76.77,
+                "macro_f1": 73.81
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.97,
+                "weighted_f1": 76.71,
+                "macro_f1": 73.49
+              },
+              "val_select": {
+                "accuracy": 77.54,
+                "weighted_f1": 77.26,
+                "macro_f1": 73.57
+              },
+              "val_calibration": {
+                "accuracy": 78.69,
+                "weighted_f1": 78.47,
+                "macro_f1": 70.87
+              },
+              "fixes_vs_base": 23,
+              "harms_vs_base": 26
+            },
+            "200409": {
+              "params": {
+                "lam": 20,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.81,
+                "weighted_f1": 77.39,
+                "macro_f1": 73.95
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.79,
+                "weighted_f1": 77.33,
+                "macro_f1": 73.62
+              },
+              "val_select": {
+                "accuracy": 77.7,
+                "weighted_f1": 77.62,
+                "macro_f1": 73.43
+              },
+              "val_calibration": {
+                "accuracy": 79.51,
+                "weighted_f1": 79.44,
+                "macro_f1": 72.06
+              },
+              "fixes_vs_base": 40,
+              "harms_vs_base": 25
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 78.03,
+                "std": 0.7,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.86,
+                "std": 0.65,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.23,
+                "std": 0.78,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.92,
+                "std": 0.53,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.93,
+                "std": 0.58,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 1.98,
+                "std": 1.16,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 78.0,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.98,
+                "std": 0.56,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 70.71,
+                "std": 0.8,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.16,
+                "std": 1.18,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.06,
+                "std": 1.33,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.36,
+                "std": 0.77,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 77.48,
+                "std": 0.53,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.11,
+                "std": 0.48,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.88,
+                "std": 0.62,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.5,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.28,
+                "std": 0.53,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.35,
+                "std": 0.67,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 77.46,
+                "std": 0.53,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.07,
+                "std": 0.47,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.6,
+                "std": 0.59,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.44,
+                "std": 0.47,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.21,
+                "std": 0.51,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.18,
+                "std": 0.66,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 4,
+            "seeds_worse_test_acc": 1
+          }
+        },
+        "egmr_mm_noconflict": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 10,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 77.81,
+                "weighted_f1": 77.48,
+                "macro_f1": 74.47
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.79,
+                "weighted_f1": 77.42,
+                "macro_f1": 74.15
+              },
+              "val_select": {
+                "accuracy": 77.54,
+                "weighted_f1": 77.48,
+                "macro_f1": 72.13
+              },
+              "val_calibration": {
+                "accuracy": 78.2,
+                "weighted_f1": 78.46,
+                "macro_f1": 71.79
+              },
+              "fixes_vs_base": 22,
+              "harms_vs_base": 15
+            },
+            "200405": {
+              "params": {
+                "lam": 20,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 77.89,
+                "weighted_f1": 77.5,
+                "macro_f1": 74.35
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.46,
+                "macro_f1": 74.09
+              },
+              "val_select": {
+                "accuracy": 78.2,
+                "weighted_f1": 77.73,
+                "macro_f1": 73.27
+              },
+              "val_calibration": {
+                "accuracy": 77.7,
+                "weighted_f1": 78.02,
+                "macro_f1": 70.25
+              },
+              "fixes_vs_base": 37,
+              "harms_vs_base": 23
+            },
+            "200406": {
+              "params": {
+                "lam": 40,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 77.89,
+                "weighted_f1": 77.36,
+                "macro_f1": 73.86
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.33,
+                "macro_f1": 73.6
+              },
+              "val_select": {
+                "accuracy": 79.18,
+                "weighted_f1": 78.94,
+                "macro_f1": 74.23
+              },
+              "val_calibration": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.87,
+                "macro_f1": 70.98
+              },
+              "fixes_vs_base": 44,
+              "harms_vs_base": 37
+            },
+            "200407": {
+              "params": {
+                "lam": 10,
+                "m": 3,
+                "beta": 1.0,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 76.82,
+                "weighted_f1": 76.45,
+                "macro_f1": 72.89
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.8,
+                "weighted_f1": 76.43,
+                "macro_f1": 72.68
+              },
+              "val_select": {
+                "accuracy": 77.7,
+                "weighted_f1": 77.87,
+                "macro_f1": 72.95
+              },
+              "val_calibration": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.1,
+                "macro_f1": 69.68
+              },
+              "fixes_vs_base": 29,
+              "harms_vs_base": 24
+            },
+            "200408": {
+              "params": {
+                "lam": 10,
+                "m": 8,
+                "beta": 1.0,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 76.99,
+                "weighted_f1": 76.77,
+                "macro_f1": 73.81
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.97,
+                "weighted_f1": 76.71,
+                "macro_f1": 73.49
+              },
+              "val_select": {
+                "accuracy": 77.54,
+                "weighted_f1": 77.26,
+                "macro_f1": 73.57
+              },
+              "val_calibration": {
+                "accuracy": 78.69,
+                "weighted_f1": 78.47,
+                "macro_f1": 70.87
+              },
+              "fixes_vs_base": 23,
+              "harms_vs_base": 26
+            },
+            "200409": {
+              "params": {
+                "lam": 20,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 77.81,
+                "weighted_f1": 77.39,
+                "macro_f1": 73.95
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.79,
+                "weighted_f1": 77.33,
+                "macro_f1": 73.62
+              },
+              "val_select": {
+                "accuracy": 77.7,
+                "weighted_f1": 77.62,
+                "macro_f1": 73.43
+              },
+              "val_calibration": {
+                "accuracy": 79.51,
+                "weighted_f1": 79.44,
+                "macro_f1": 72.06
+              },
+              "fixes_vs_base": 40,
+              "harms_vs_base": 25
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 78.03,
+                "std": 0.7,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.86,
+                "std": 0.65,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.23,
+                "std": 0.78,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.92,
+                "std": 0.53,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.93,
+                "std": 0.58,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 1.98,
+                "std": 1.16,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 78.0,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.98,
+                "std": 0.56,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 70.71,
+                "std": 0.8,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.16,
+                "std": 1.18,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.06,
+                "std": 1.33,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.36,
+                "std": 0.77,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 77.48,
+                "std": 0.53,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.11,
+                "std": 0.48,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.88,
+                "std": 0.62,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.5,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.28,
+                "std": 0.53,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.35,
+                "std": 0.67,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 77.46,
+                "std": 0.53,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.07,
+                "std": 0.47,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 73.6,
+                "std": 0.59,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.44,
+                "std": 0.47,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.21,
+                "std": 0.51,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.18,
+                "std": 0.66,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 4,
+            "seeds_worse_test_acc": 1
+          }
+        },
+        "egmr_mm_permuted": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 0.5,
+                "m": 8,
+                "beta": 0.25,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 77.07,
+                "weighted_f1": 76.88,
+                "macro_f1": 73.45
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.05,
+                "weighted_f1": 76.82,
+                "macro_f1": 73.12
+              },
+              "val_select": {
+                "accuracy": 77.21,
+                "weighted_f1": 77.14,
+                "macro_f1": 71.08
+              },
+              "val_calibration": {
+                "accuracy": 78.03,
+                "weighted_f1": 78.39,
+                "macro_f1": 71.61
+              },
+              "fixes_vs_base": 1,
+              "harms_vs_base": 3
+            },
+            "200405": {
+              "params": {
+                "lam": 0.5,
+                "m": 3,
+                "beta": 1.0,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 76.66,
+                "weighted_f1": 76.44,
+                "macro_f1": 73.03
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.72,
+                "weighted_f1": 76.52,
+                "macro_f1": 73.06
+              },
+              "val_select": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.57,
+                "macro_f1": 71.66
+              },
+              "val_calibration": {
+                "accuracy": 77.7,
+                "weighted_f1": 78.08,
+                "macro_f1": 70.33
+              },
+              "fixes_vs_base": 4,
+              "harms_vs_base": 5
+            },
+            "200406": {
+              "params": {
+                "lam": 0,
+                "m": 1,
+                "beta": 0.25,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 77.31,
+                "weighted_f1": 77.1,
+                "macro_f1": 73.95
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.17,
+                "macro_f1": 73.97
+              },
+              "val_select": {
+                "accuracy": 77.87,
+                "weighted_f1": 77.4,
+                "macro_f1": 72.18
+              },
+              "val_calibration": {
+                "accuracy": 79.34,
+                "weighted_f1": 79.53,
+                "macro_f1": 71.92
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200407": {
+              "params": {
+                "lam": 5,
+                "m": 8,
+                "beta": 0.5,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 75.51,
+                "weighted_f1": 74.92,
+                "macro_f1": 70.36
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 75.57,
+                "weighted_f1": 75.01,
+                "macro_f1": 70.37
+              },
+              "val_select": {
+                "accuracy": 77.38,
+                "weighted_f1": 77.15,
+                "macro_f1": 71.91
+              },
+              "val_calibration": {
+                "accuracy": 76.39,
+                "weighted_f1": 75.87,
+                "macro_f1": 68.36
+              },
+              "fixes_vs_base": 13,
+              "harms_vs_base": 24
+            },
+            "200408": {
+              "params": {
+                "lam": 5,
+                "m": 8,
+                "beta": 0.25,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 75.43,
+                "weighted_f1": 75.07,
+                "macro_f1": 71.59
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 75.41,
+                "weighted_f1": 75.01,
+                "macro_f1": 71.27
+              },
+              "val_select": {
+                "accuracy": 76.56,
+                "weighted_f1": 75.96,
+                "macro_f1": 69.3
+              },
+              "val_calibration": {
+                "accuracy": 77.54,
+                "weighted_f1": 76.86,
+                "macro_f1": 70.83
+              },
+              "fixes_vs_base": 15,
+              "harms_vs_base": 37
+            },
+            "200409": {
+              "params": {
+                "lam": 0.5,
+                "m": 3,
+                "beta": 0.5,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 76.82,
+                "weighted_f1": 76.68,
+                "macro_f1": 73.87
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 76.8,
+                "weighted_f1": 76.62,
+                "macro_f1": 73.55
+              },
+              "val_select": {
+                "accuracy": 76.89,
+                "weighted_f1": 76.39,
+                "macro_f1": 71.16
+              },
+              "val_calibration": {
+                "accuracy": 78.69,
+                "weighted_f1": 79.08,
+                "macro_f1": 72.8
+              },
+              "fixes_vs_base": 6,
+              "harms_vs_base": 3
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 77.41,
+                "std": 0.58,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.04,
+                "std": 0.63,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 71.23,
+                "std": 1.15,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.3,
+                "std": 0.27,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.12,
+                "std": 0.16,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.02,
+                "std": 0.39,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 77.8,
+                "std": 1.06,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.75,
+                "std": 1.42,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 70.61,
+                "std": 1.41,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.04,
+                "std": 0.54,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.3,
+                "std": 0.7,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.46,
+                "std": 1.12,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 76.4,
+                "std": 0.88,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.08,
+                "std": 1.02,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 72.48,
+                "std": 1.47,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.59,
+                "std": 0.77,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.75,
+                "std": 0.97,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -1.05,
+                "std": 1.3,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 76.43,
+                "std": 0.89,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 76.11,
+                "std": 1.03,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 72.36,
+                "std": 1.48,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.59,
+                "std": 0.77,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.76,
+                "std": 0.98,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -1.06,
+                "std": 1.32,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 0,
+            "seeds_worse_test_acc": 4
+          }
+        }
+      }
+    },
+    "Biology": {
+      "completed_seeds": [
+        200404,
+        200405,
+        200406,
+        200407,
+        200408,
+        200409
+      ],
+      "missing_seeds": [],
+      "variants": {
+        "base": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 76.96,
+                "weighted_f1": 76.45,
+                "macro_f1": 73.21
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.84,
+                "weighted_f1": 77.52,
+                "macro_f1": 73.4
+              },
+              "val_select": {
+                "accuracy": 80.6,
+                "weighted_f1": 79.93,
+                "macro_f1": 77.36
+              },
+              "val_calibration": {
+                "accuracy": 78.48,
+                "weighted_f1": 78.27,
+                "macro_f1": 75.22
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200405": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.69,
+                "macro_f1": 75.29
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.33,
+                "weighted_f1": 78.17,
+                "macro_f1": 74.89
+              },
+              "val_select": {
+                "accuracy": 81.32,
+                "weighted_f1": 80.91,
+                "macro_f1": 79.0
+              },
+              "val_calibration": {
+                "accuracy": 79.77,
+                "weighted_f1": 79.55,
+                "macro_f1": 77.1
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200406": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 78.46,
+                "weighted_f1": 78.13,
+                "macro_f1": 75.96
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.98,
+                "weighted_f1": 78.76,
+                "macro_f1": 75.87
+              },
+              "val_select": {
+                "accuracy": 81.03,
+                "weighted_f1": 80.66,
+                "macro_f1": 78.49
+              },
+              "val_calibration": {
+                "accuracy": 79.63,
+                "weighted_f1": 79.39,
+                "macro_f1": 76.84
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200407": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 77.24,
+                "weighted_f1": 76.64,
+                "macro_f1": 73.7
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.92,
+                "weighted_f1": 77.66,
+                "macro_f1": 73.79
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 80.19,
+                "macro_f1": 78.05
+              },
+              "val_calibration": {
+                "accuracy": 80.49,
+                "weighted_f1": 79.96,
+                "macro_f1": 76.75
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200408": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 78.18,
+                "weighted_f1": 77.76,
+                "macro_f1": 75.23
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.57,
+                "weighted_f1": 78.3,
+                "macro_f1": 74.89
+              },
+              "val_select": {
+                "accuracy": 80.75,
+                "weighted_f1": 80.1,
+                "macro_f1": 78.3
+              },
+              "val_calibration": {
+                "accuracy": 80.49,
+                "weighted_f1": 80.44,
+                "macro_f1": 77.89
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200409": {
+              "params": {
+                "lam": 0
+              },
+              "test": {
+                "accuracy": 78.18,
+                "weighted_f1": 77.59,
+                "macro_f1": 74.84
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.0,
+                "weighted_f1": 77.74,
+                "macro_f1": 73.63
+              },
+              "val_select": {
+                "accuracy": 80.75,
+                "weighted_f1": 79.91,
+                "macro_f1": 77.87
+              },
+              "val_calibration": {
+                "accuracy": 80.92,
+                "weighted_f1": 80.64,
+                "macro_f1": 77.29
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 81.03,
+                "std": 0.37,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 80.36,
+                "std": 0.41,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 78.24,
+                "std": 0.6,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 79.77,
+                "std": 0.82,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 79.52,
+                "std": 0.81,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 76.76,
+                "std": 0.97,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 77.77,
+                "std": 0.64,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.33,
+                "std": 0.74,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 74.68,
+                "std": 1.17,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 78.33,
+                "std": 0.47,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.08,
+                "std": 0.5,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 74.57,
+                "std": 0.98,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.0,
+                "std": 0.0,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 0,
+            "seeds_worse_test_acc": 0
+          }
+        },
+        "knn_global": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 0.5,
+                "tau": 0.1,
+                "k": 32,
+                "beta": 0.0
+              },
+              "test": {
+                "accuracy": 77.24,
+                "weighted_f1": 76.92,
+                "macro_f1": 73.77
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.49,
+                "weighted_f1": 78.28,
+                "macro_f1": 74.14
+              },
+              "val_select": {
+                "accuracy": 81.18,
+                "weighted_f1": 80.7,
+                "macro_f1": 78.57
+              },
+              "val_calibration": {
+                "accuracy": 79.91,
+                "weighted_f1": 79.87,
+                "macro_f1": 77.13
+              },
+              "fixes_vs_base": 34,
+              "harms_vs_base": 30
+            },
+            "200405": {
+              "params": {
+                "lam": 0.2,
+                "tau": 0.1,
+                "k": 32,
+                "beta": 1.0
+              },
+              "test": {
+                "accuracy": 78.89,
+                "weighted_f1": 78.57,
+                "macro_f1": 76.11
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.46,
+                "weighted_f1": 79.3,
+                "macro_f1": 76.1
+              },
+              "val_select": {
+                "accuracy": 82.04,
+                "weighted_f1": 81.49,
+                "macro_f1": 79.04
+              },
+              "val_calibration": {
+                "accuracy": 78.77,
+                "weighted_f1": 78.61,
+                "macro_f1": 75.59
+              },
+              "fixes_vs_base": 23,
+              "harms_vs_base": 11
+            },
+            "200406": {
+              "params": {
+                "lam": 0.2,
+                "tau": 0.02,
+                "k": 8,
+                "beta": 0.25
+              },
+              "test": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.76,
+                "macro_f1": 75.09
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.3,
+                "weighted_f1": 79.07,
+                "macro_f1": 76.16
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 81.2,
+                "macro_f1": 78.75
+              },
+              "val_calibration": {
+                "accuracy": 78.91,
+                "weighted_f1": 78.86,
+                "macro_f1": 75.98
+              },
+              "fixes_vs_base": 22,
+              "harms_vs_base": 28
+            },
+            "200407": {
+              "params": {
+                "lam": 0.2,
+                "tau": 0.05,
+                "k": 32,
+                "beta": 0.0
+              },
+              "test": {
+                "accuracy": 77.32,
+                "weighted_f1": 76.82,
+                "macro_f1": 73.84
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.33,
+                "weighted_f1": 78.03,
+                "macro_f1": 73.98
+              },
+              "val_select": {
+                "accuracy": 81.61,
+                "weighted_f1": 80.57,
+                "macro_f1": 78.05
+              },
+              "val_calibration": {
+                "accuracy": 80.34,
+                "weighted_f1": 80.02,
+                "macro_f1": 77.0
+              },
+              "fixes_vs_base": 15,
+              "harms_vs_base": 14
+            },
+            "200408": {
+              "params": {
+                "lam": 0.3,
+                "tau": 0.1,
+                "k": 32,
+                "beta": 0.25
+              },
+              "test": {
+                "accuracy": 78.39,
+                "weighted_f1": 77.97,
+                "macro_f1": 75.31
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.22,
+                "weighted_f1": 78.94,
+                "macro_f1": 75.31
+              },
+              "val_select": {
+                "accuracy": 81.18,
+                "weighted_f1": 80.55,
+                "macro_f1": 78.49
+              },
+              "val_calibration": {
+                "accuracy": 80.2,
+                "weighted_f1": 79.93,
+                "macro_f1": 77.26
+              },
+              "fixes_vs_base": 21,
+              "harms_vs_base": 18
+            },
+            "200409": {
+              "params": {
+                "lam": 0.3,
+                "tau": 0.1,
+                "k": 8,
+                "beta": 0.5
+              },
+              "test": {
+                "accuracy": 78.1,
+                "weighted_f1": 77.61,
+                "macro_f1": 74.99
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.41,
+                "weighted_f1": 78.13,
+                "macro_f1": 74.24
+              },
+              "val_select": {
+                "accuracy": 81.61,
+                "weighted_f1": 81.07,
+                "macro_f1": 78.68
+              },
+              "val_calibration": {
+                "accuracy": 80.2,
+                "weighted_f1": 79.93,
+                "macro_f1": 76.56
+              },
+              "fixes_vs_base": 25,
+              "harms_vs_base": 26
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 81.5,
+                "std": 0.36,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 80.9,
+                "std": 0.42,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 78.58,
+                "std": 0.36,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.46,
+                "std": 0.22,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.54,
+                "std": 0.15,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.34,
+                "std": 0.5,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 79.63,
+                "std": 0.74,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 79.46,
+                "std": 0.67,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 76.59,
+                "std": 0.76,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.15,
+                "std": 0.94,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.06,
+                "std": 1.0,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.17,
+                "std": 1.32,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 77.97,
+                "std": 0.7,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.61,
+                "std": 0.74,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 74.82,
+                "std": 1.0,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.2,
+                "std": 0.46,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.27,
+                "std": 0.46,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.15,
+                "std": 0.64,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 78.96,
+                "std": 0.51,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.72,
+                "std": 0.54,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 75.14,
+                "std": 1.04,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.63,
+                "std": 0.31,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.64,
+                "std": 0.33,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.57,
+                "std": 0.41,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 4,
+            "seeds_worse_test_acc": 1
+          }
+        },
+        "egmr_text": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 10,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.82,
+                "weighted_f1": 77.48,
+                "macro_f1": 74.39
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.22,
+                "weighted_f1": 79.08,
+                "macro_f1": 74.87
+              },
+              "val_select": {
+                "accuracy": 81.61,
+                "weighted_f1": 81.11,
+                "macro_f1": 78.9
+              },
+              "val_calibration": {
+                "accuracy": 79.77,
+                "weighted_f1": 79.66,
+                "macro_f1": 76.69
+              },
+              "fixes_vs_base": 35,
+              "harms_vs_base": 23
+            },
+            "200405": {
+              "params": {
+                "lam": 2,
+                "m": 8,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 78.75,
+                "weighted_f1": 78.44,
+                "macro_f1": 76.11
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.14,
+                "weighted_f1": 79.04,
+                "macro_f1": 75.62
+              },
+              "val_select": {
+                "accuracy": 82.04,
+                "weighted_f1": 81.57,
+                "macro_f1": 79.58
+              },
+              "val_calibration": {
+                "accuracy": 79.34,
+                "weighted_f1": 79.17,
+                "macro_f1": 76.17
+              },
+              "fixes_vs_base": 17,
+              "harms_vs_base": 7
+            },
+            "200406": {
+              "params": {
+                "lam": 5,
+                "m": 1,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.89,
+                "weighted_f1": 77.58,
+                "macro_f1": 75.12
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.98,
+                "weighted_f1": 78.7,
+                "macro_f1": 75.87
+              },
+              "val_select": {
+                "accuracy": 81.61,
+                "weighted_f1": 81.34,
+                "macro_f1": 79.23
+              },
+              "val_calibration": {
+                "accuracy": 78.91,
+                "weighted_f1": 78.9,
+                "macro_f1": 76.08
+              },
+              "fixes_vs_base": 17,
+              "harms_vs_base": 25
+            },
+            "200407": {
+              "params": {
+                "lam": 10,
+                "m": 3,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.53,
+                "weighted_f1": 77.02,
+                "macro_f1": 74.22
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.65,
+                "weighted_f1": 78.38,
+                "macro_f1": 74.35
+              },
+              "val_select": {
+                "accuracy": 81.75,
+                "weighted_f1": 81.01,
+                "macro_f1": 78.52
+              },
+              "val_calibration": {
+                "accuracy": 80.63,
+                "weighted_f1": 80.22,
+                "macro_f1": 77.42
+              },
+              "fixes_vs_base": 25,
+              "harms_vs_base": 21
+            },
+            "200408": {
+              "params": {
+                "lam": 20,
+                "m": 3,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.96,
+                "weighted_f1": 77.61,
+                "macro_f1": 74.89
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.14,
+                "weighted_f1": 78.83,
+                "macro_f1": 75.16
+              },
+              "val_select": {
+                "accuracy": 80.75,
+                "weighted_f1": 80.34,
+                "macro_f1": 77.98
+              },
+              "val_calibration": {
+                "accuracy": 78.91,
+                "weighted_f1": 78.62,
+                "macro_f1": 75.79
+              },
+              "fixes_vs_base": 33,
+              "harms_vs_base": 36
+            },
+            "200409": {
+              "params": {
+                "lam": 5,
+                "m": 3,
+                "beta": 0.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 78.32,
+                "weighted_f1": 77.73,
+                "macro_f1": 75.2
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.41,
+                "weighted_f1": 78.1,
+                "macro_f1": 74.37
+              },
+              "val_select": {
+                "accuracy": 81.03,
+                "weighted_f1": 80.33,
+                "macro_f1": 78.29
+              },
+              "val_calibration": {
+                "accuracy": 80.63,
+                "weighted_f1": 80.43,
+                "macro_f1": 77.03
+              },
+              "fixes_vs_base": 23,
+              "harms_vs_base": 21
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 81.55,
+                "std": 0.48,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 81.07,
+                "std": 0.46,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 78.84,
+                "std": 0.62,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.52,
+                "std": 0.39,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.72,
+                "std": 0.34,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.6,
+                "std": 0.66,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 79.51,
+                "std": 0.72,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 79.31,
+                "std": 0.64,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 76.43,
+                "std": 0.64,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.26,
+                "std": 1.07,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.21,
+                "std": 1.17,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.33,
+                "std": 1.41,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 77.99,
+                "std": 0.46,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.63,
+                "std": 0.51,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 74.95,
+                "std": 0.75,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.22,
+                "std": 0.61,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.29,
+                "std": 0.65,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.27,
+                "std": 0.84,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 79.03,
+                "std": 0.23,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.81,
+                "std": 0.28,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 75.17,
+                "std": 0.6,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.7,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.72,
+                "std": 0.59,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.61,
+                "std": 0.56,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 3,
+            "seeds_worse_test_acc": 2
+          }
+        },
+        "egmr_mm": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 10,
+                "m": 3,
+                "beta": 0.5,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.75,
+                "weighted_f1": 77.46,
+                "macro_f1": 74.14
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.14,
+                "weighted_f1": 78.97,
+                "macro_f1": 74.5
+              },
+              "val_select": {
+                "accuracy": 81.32,
+                "weighted_f1": 80.84,
+                "macro_f1": 78.21
+              },
+              "val_calibration": {
+                "accuracy": 79.77,
+                "weighted_f1": 79.73,
+                "macro_f1": 76.77
+              },
+              "fixes_vs_base": 31,
+              "harms_vs_base": 20
+            },
+            "200405": {
+              "params": {
+                "lam": 2,
+                "m": 8,
+                "beta": 0.25,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 78.75,
+                "weighted_f1": 78.43,
+                "macro_f1": 76.09
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.14,
+                "weighted_f1": 79.04,
+                "macro_f1": 75.62
+              },
+              "val_select": {
+                "accuracy": 81.9,
+                "weighted_f1": 81.36,
+                "macro_f1": 79.33
+              },
+              "val_calibration": {
+                "accuracy": 79.2,
+                "weighted_f1": 79.06,
+                "macro_f1": 76.09
+              },
+              "fixes_vs_base": 17,
+              "harms_vs_base": 7
+            },
+            "200406": {
+              "params": {
+                "lam": 10,
+                "m": 1,
+                "beta": 1.0,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.82,
+                "weighted_f1": 77.53,
+                "macro_f1": 74.99
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.9,
+                "weighted_f1": 78.64,
+                "macro_f1": 75.73
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 81.17,
+                "macro_f1": 79.21
+              },
+              "val_calibration": {
+                "accuracy": 78.19,
+                "weighted_f1": 78.22,
+                "macro_f1": 74.85
+              },
+              "fixes_vs_base": 31,
+              "harms_vs_base": 40
+            },
+            "200407": {
+              "params": {
+                "lam": 10,
+                "m": 3,
+                "beta": 0.25,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 77.67,
+                "weighted_f1": 77.17,
+                "macro_f1": 74.46
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.9,
+                "weighted_f1": 78.61,
+                "macro_f1": 74.66
+              },
+              "val_select": {
+                "accuracy": 82.18,
+                "weighted_f1": 81.46,
+                "macro_f1": 79.07
+              },
+              "val_calibration": {
+                "accuracy": 80.34,
+                "weighted_f1": 80.01,
+                "macro_f1": 77.09
+              },
+              "fixes_vs_base": 28,
+              "harms_vs_base": 22
+            },
+            "200408": {
+              "params": {
+                "lam": 0.5,
+                "m": 3,
+                "beta": 0.25,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 78.54,
+                "weighted_f1": 78.12,
+                "macro_f1": 75.62
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.98,
+                "weighted_f1": 78.7,
+                "macro_f1": 75.28
+              },
+              "val_select": {
+                "accuracy": 80.75,
+                "weighted_f1": 80.15,
+                "macro_f1": 78.27
+              },
+              "val_calibration": {
+                "accuracy": 80.06,
+                "weighted_f1": 79.99,
+                "macro_f1": 77.19
+              },
+              "fixes_vs_base": 5,
+              "harms_vs_base": 0
+            },
+            "200409": {
+              "params": {
+                "lam": 5,
+                "m": 3,
+                "beta": 0.25,
+                "conflict": true
+              },
+              "test": {
+                "accuracy": 78.32,
+                "weighted_f1": 77.73,
+                "macro_f1": 75.16
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.41,
+                "weighted_f1": 78.1,
+                "macro_f1": 74.34
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 80.77,
+                "macro_f1": 78.68
+              },
+              "val_calibration": {
+                "accuracy": 80.49,
+                "weighted_f1": 80.28,
+                "macro_f1": 77.03
+              },
+              "fixes_vs_base": 23,
+              "harms_vs_base": 21
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 81.52,
+                "std": 0.55,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 81.0,
+                "std": 0.53,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 78.82,
+                "std": 0.54,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.49,
+                "std": 0.3,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.64,
+                "std": 0.47,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.58,
+                "std": 0.42,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 79.51,
+                "std": 0.85,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 79.4,
+                "std": 0.76,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 76.4,
+                "std": 0.97,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.26,
+                "std": 0.99,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.12,
+                "std": 0.98,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.36,
+                "std": 1.35,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 78.11,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.74,
+                "std": 0.52,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 75.06,
+                "std": 0.8,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.33,
+                "std": 0.57,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.41,
+                "std": 0.61,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.38,
+                "std": 0.78,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 79.01,
+                "std": 0.12,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.79,
+                "std": 0.2,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 75.16,
+                "std": 0.56,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.68,
+                "std": 0.53,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.71,
+                "std": 0.59,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.59,
+                "std": 0.48,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 4,
+            "seeds_worse_test_acc": 1
+          }
+        },
+        "egmr_mm_noconflict": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 20,
+                "m": 3,
+                "beta": 1.0,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 77.82,
+                "weighted_f1": 77.55,
+                "macro_f1": 74.33
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.22,
+                "weighted_f1": 78.99,
+                "macro_f1": 74.57
+              },
+              "val_select": {
+                "accuracy": 81.32,
+                "weighted_f1": 80.84,
+                "macro_f1": 78.42
+              },
+              "val_calibration": {
+                "accuracy": 77.76,
+                "weighted_f1": 77.71,
+                "macro_f1": 74.66
+              },
+              "fixes_vs_base": 46,
+              "harms_vs_base": 34
+            },
+            "200405": {
+              "params": {
+                "lam": 2,
+                "m": 3,
+                "beta": 1.0,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 78.68,
+                "weighted_f1": 78.41,
+                "macro_f1": 75.93
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 79.22,
+                "weighted_f1": 79.08,
+                "macro_f1": 75.95
+              },
+              "val_select": {
+                "accuracy": 81.75,
+                "weighted_f1": 81.25,
+                "macro_f1": 78.85
+              },
+              "val_calibration": {
+                "accuracy": 78.77,
+                "weighted_f1": 78.66,
+                "macro_f1": 75.9
+              },
+              "fixes_vs_base": 19,
+              "harms_vs_base": 10
+            },
+            "200406": {
+              "params": {
+                "lam": 10,
+                "m": 1,
+                "beta": 1.0,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 77.82,
+                "weighted_f1": 77.53,
+                "macro_f1": 74.99
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.9,
+                "weighted_f1": 78.64,
+                "macro_f1": 75.73
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 81.17,
+                "macro_f1": 79.21
+              },
+              "val_calibration": {
+                "accuracy": 78.19,
+                "weighted_f1": 78.22,
+                "macro_f1": 74.85
+              },
+              "fixes_vs_base": 31,
+              "harms_vs_base": 40
+            },
+            "200407": {
+              "params": {
+                "lam": 10,
+                "m": 3,
+                "beta": 0.25,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 77.6,
+                "weighted_f1": 77.09,
+                "macro_f1": 74.37
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.81,
+                "weighted_f1": 78.53,
+                "macro_f1": 74.57
+              },
+              "val_select": {
+                "accuracy": 82.04,
+                "weighted_f1": 81.34,
+                "macro_f1": 78.87
+              },
+              "val_calibration": {
+                "accuracy": 80.34,
+                "weighted_f1": 79.95,
+                "macro_f1": 77.05
+              },
+              "fixes_vs_base": 28,
+              "harms_vs_base": 23
+            },
+            "200408": {
+              "params": {
+                "lam": 0.5,
+                "m": 3,
+                "beta": 0.25,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 78.54,
+                "weighted_f1": 78.12,
+                "macro_f1": 75.62
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.98,
+                "weighted_f1": 78.7,
+                "macro_f1": 75.28
+              },
+              "val_select": {
+                "accuracy": 80.75,
+                "weighted_f1": 80.15,
+                "macro_f1": 78.27
+              },
+              "val_calibration": {
+                "accuracy": 80.06,
+                "weighted_f1": 79.99,
+                "macro_f1": 77.19
+              },
+              "fixes_vs_base": 5,
+              "harms_vs_base": 0
+            },
+            "200409": {
+              "params": {
+                "lam": 5,
+                "m": 3,
+                "beta": 0.25,
+                "conflict": false
+              },
+              "test": {
+                "accuracy": 78.32,
+                "weighted_f1": 77.73,
+                "macro_f1": 75.16
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.41,
+                "weighted_f1": 78.1,
+                "macro_f1": 74.34
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 80.77,
+                "macro_f1": 78.68
+              },
+              "val_calibration": {
+                "accuracy": 80.34,
+                "weighted_f1": 80.14,
+                "macro_f1": 76.82
+              },
+              "fixes_vs_base": 23,
+              "harms_vs_base": 21
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 81.47,
+                "std": 0.49,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 80.95,
+                "std": 0.49,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 78.72,
+                "std": 0.38,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.43,
+                "std": 0.27,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.59,
+                "std": 0.44,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.48,
+                "std": 0.54,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 79.02,
+                "std": 1.14,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.91,
+                "std": 1.03,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 75.93,
+                "std": 1.19,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.75,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.62,
+                "std": 0.44,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.83,
+                "std": 0.84,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 78.09,
+                "std": 0.48,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.74,
+                "std": 0.52,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 75.05,
+                "std": 0.72,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.32,
+                "std": 0.58,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.41,
+                "std": 0.63,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.37,
+                "std": 0.79,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 79.03,
+                "std": 0.19,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.79,
+                "std": 0.24,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 75.22,
+                "std": 0.64,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.7,
+                "std": 0.55,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.71,
+                "std": 0.6,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.65,
+                "std": 0.54,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 4,
+            "seeds_worse_test_acc": 1
+          }
+        },
+        "egmr_mm_permuted": {
+          "per_seed": {
+            "200404": {
+              "params": {
+                "lam": 0,
+                "m": 1,
+                "beta": 0.25,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 76.96,
+                "weighted_f1": 76.45,
+                "macro_f1": 73.21
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.84,
+                "weighted_f1": 77.52,
+                "macro_f1": 73.4
+              },
+              "val_select": {
+                "accuracy": 80.6,
+                "weighted_f1": 79.93,
+                "macro_f1": 77.36
+              },
+              "val_calibration": {
+                "accuracy": 78.48,
+                "weighted_f1": 78.27,
+                "macro_f1": 75.22
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200405": {
+              "params": {
+                "lam": 0.5,
+                "m": 3,
+                "beta": 1.0,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 78.39,
+                "weighted_f1": 78.1,
+                "macro_f1": 75.82
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.57,
+                "weighted_f1": 78.43,
+                "macro_f1": 75.47
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 81.04,
+                "macro_f1": 79.36
+              },
+              "val_calibration": {
+                "accuracy": 79.34,
+                "weighted_f1": 79.18,
+                "macro_f1": 76.47
+              },
+              "fixes_vs_base": 10,
+              "harms_vs_base": 5
+            },
+            "200406": {
+              "params": {
+                "lam": 2,
+                "m": 3,
+                "beta": 0.25,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 78.03,
+                "weighted_f1": 77.64,
+                "macro_f1": 75.46
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.81,
+                "weighted_f1": 78.53,
+                "macro_f1": 75.75
+              },
+              "val_select": {
+                "accuracy": 81.47,
+                "weighted_f1": 81.02,
+                "macro_f1": 78.92
+              },
+              "val_calibration": {
+                "accuracy": 79.91,
+                "weighted_f1": 79.91,
+                "macro_f1": 77.32
+              },
+              "fixes_vs_base": 18,
+              "harms_vs_base": 24
+            },
+            "200407": {
+              "params": {
+                "lam": 0.5,
+                "m": 8,
+                "beta": 1.0,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 77.39,
+                "weighted_f1": 76.81,
+                "macro_f1": 73.91
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.17,
+                "weighted_f1": 77.91,
+                "macro_f1": 74.07
+              },
+              "val_select": {
+                "accuracy": 81.75,
+                "weighted_f1": 80.44,
+                "macro_f1": 78.17
+              },
+              "val_calibration": {
+                "accuracy": 80.34,
+                "weighted_f1": 79.79,
+                "macro_f1": 76.48
+              },
+              "fixes_vs_base": 5,
+              "harms_vs_base": 3
+            },
+            "200408": {
+              "params": {
+                "lam": 0,
+                "m": 1,
+                "beta": 0.25,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 78.18,
+                "weighted_f1": 77.76,
+                "macro_f1": 75.23
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 78.57,
+                "weighted_f1": 78.3,
+                "macro_f1": 74.89
+              },
+              "val_select": {
+                "accuracy": 80.75,
+                "weighted_f1": 80.1,
+                "macro_f1": 78.3
+              },
+              "val_calibration": {
+                "accuracy": 80.49,
+                "weighted_f1": 80.44,
+                "macro_f1": 77.89
+              },
+              "fixes_vs_base": 0,
+              "harms_vs_base": 0
+            },
+            "200409": {
+              "params": {
+                "lam": 1,
+                "m": 1,
+                "beta": 0.25,
+                "conflict": false,
+                "permuted": true
+              },
+              "test": {
+                "accuracy": 77.89,
+                "weighted_f1": 77.31,
+                "macro_f1": 74.65
+              },
+              "test_excluding_train_overlap": {
+                "accuracy": 77.92,
+                "weighted_f1": 77.61,
+                "macro_f1": 73.57
+              },
+              "val_select": {
+                "accuracy": 81.18,
+                "weighted_f1": 80.49,
+                "macro_f1": 78.38
+              },
+              "val_calibration": {
+                "accuracy": 79.91,
+                "weighted_f1": 79.63,
+                "macro_f1": 76.27
+              },
+              "fixes_vs_base": 6,
+              "harms_vs_base": 10
+            }
+          },
+          "main_seeds": [
+            200404,
+            200405,
+            200406,
+            200407,
+            200408
+          ],
+          "aggregate": {
+            "val_select": {
+              "accuracy": {
+                "mean": 81.21,
+                "std": 0.5,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 80.51,
+                "std": 0.51,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 78.42,
+                "std": 0.76,
+                "n": 5
+              }
+            },
+            "val_select_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.17,
+                "std": 0.19,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.15,
+                "std": 0.16,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.18,
+                "std": 0.2,
+                "n": 5
+              }
+            },
+            "val_calibration": {
+              "accuracy": {
+                "mean": 79.71,
+                "std": 0.82,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 79.52,
+                "std": 0.83,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 76.68,
+                "std": 1.01,
+                "n": 5
+              }
+            },
+            "val_calibration_delta_vs_base": {
+              "accuracy": {
+                "mean": -0.06,
+                "std": 0.26,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": -0.0,
+                "std": 0.33,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": -0.08,
+                "std": 0.41,
+                "n": 5
+              }
+            },
+            "test": {
+              "accuracy": {
+                "mean": 77.79,
+                "std": 0.6,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 77.35,
+                "std": 0.69,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 74.73,
+                "std": 1.11,
+                "n": 5
+              }
+            },
+            "test_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.02,
+                "std": 0.29,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.02,
+                "std": 0.33,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.05,
+                "std": 0.38,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap": {
+              "accuracy": {
+                "mean": 78.39,
+                "std": 0.38,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 78.14,
+                "std": 0.42,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 74.72,
+                "std": 0.98,
+                "n": 5
+              }
+            },
+            "test_excluding_train_overlap_delta_vs_base": {
+              "accuracy": {
+                "mean": 0.06,
+                "std": 0.18,
+                "n": 5
+              },
+              "weighted_f1": {
+                "mean": 0.06,
+                "std": 0.2,
+                "n": 5
+              },
+              "macro_f1": {
+                "mean": 0.15,
+                "std": 0.28,
+                "n": 5
+              }
+            },
+            "seeds_improved_test_acc": 2,
+            "seeds_worse_test_acc": 1
+          }
+        }
+      }
+    }
+  }
+}

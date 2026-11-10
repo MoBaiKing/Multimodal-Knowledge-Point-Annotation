@@ -24,9 +24,9 @@
   "candidate_k": 5,
   "dataset": "Biology",
   "variant": "concept_evidence",
-  "prepared": "/data/dyl/CoDiVE-KC-v7/seed200409/data/Biology/prepared.pt",
-  "prepared_manifest": "/data/dyl/CoDiVE-KC-v7/seed200409/data/Biology/prepared.json",
-  "run_dir": "/data/dyl/CoDiVE-KC/runs/Biology/concept_evidence/seed200409",
+  "prepared": "data/Biology/seed200409/prepared.pt",
+  "prepared_manifest": "data/Biology/seed200409/prepared.json",
+  "run_dir": "runs/base/Biology/concept_evidence/seed200409",
   "visual_scale_grid": [
     0,
     0.5,

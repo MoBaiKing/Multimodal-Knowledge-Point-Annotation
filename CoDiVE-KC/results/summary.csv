@@ -1,3 +1,0 @@
-dataset,variant,seeds,split,ACC (%),Weighted-F1 (%),Macro-F1 (%),ACC (%) std,Weighted-F1 (%) std,Macro-F1 (%) std
-Math,concept_evidence,2,test,76.90,76.84,73.89,0.46,0.61,0.60
-Biology,concept_evidence,2,test,78.18,77.67,75.04,0.00,0.13,0.28

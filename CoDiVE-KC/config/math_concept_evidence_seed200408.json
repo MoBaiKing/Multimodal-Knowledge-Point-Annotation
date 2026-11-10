@@ -24,9 +24,9 @@
   "candidate_k": 5,
   "dataset": "Math",
   "variant": "concept_evidence",
-  "prepared": "/data/dyl/CoDiVE-KC-v7/data/Math/prepared.pt",
-  "prepared_manifest": "/data/dyl/CoDiVE-KC-v7/data/Math/prepared.json",
-  "run_dir": "/data/dyl/CoDiVE-KC/runs/Math/concept_evidence/seed200408",
+  "prepared": "data/Math/seed200408/prepared.pt",
+  "prepared_manifest": "data/Math/seed200408/prepared.json",
+  "run_dir": "runs/base/Math/concept_evidence/seed200408",
   "visual_scale_grid": [
     0,
     0.5,
