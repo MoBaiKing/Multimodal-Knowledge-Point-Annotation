@@ -2,11 +2,11 @@
 
 Code for multimodal knowledge-point (concept) classification of exam questions on two subjects, Math and Biology.
 
-## CoDiVE-KC v8
+## CoDiVE-KC
 
-Directory: [`CoDiVE-KC-v8/`](CoDiVE-KC-v8)
+Directory: [`CoDiVE-KC/`](CoDiVE-KC)
 
-v8 predicts the knowledge point of a question with a Qwen2.5-VL-3B-Instruct backbone adapted by language-side LoRA. It combines two heads:
+CoDiVE-KC predicts the knowledge point of a question with a Qwen2.5-VL-3B-Instruct backbone adapted by language-side LoRA. It combines two heads:
 
 - **Concept head** (`codive/heads.py`, `ConceptHead`): full-class semantic prototypes plus a direct classification head over the question token states.
 - **Pair evidence head** (`PairEvidenceHead`): question/concept-conditioned, null-subtracted evidence over question token states (all rows) and native image tokens (rows with images).
@@ -30,7 +30,7 @@ During training the student logits are mixed with a seed-matched MacBERT referen
 Run one experiment:
 
 ```bash
-python CoDiVE-KC-v8/scripts/worker.py --config CoDiVE-KC-v8/config/math_concept_evidence_seed200408.json --device cuda:0
+python CoDiVE-KC/scripts/worker.py --config CoDiVE-KC/config/math_concept_evidence_seed200408.json --device cuda:0
 ```
 
 ### Test results
@@ -53,6 +53,6 @@ This repository contains code, configurations and result summaries only. The fol
 - the Math/Biology datasets, images and fixed splits;
 - pretrained weights (Qwen2.5-VL-3B-Instruct, MacBERT) and trained checkpoints;
 - feature caches and run logs;
-- artifacts from earlier versions that v8 reads: the split protocol and validation roles (v5), the MacBERT grouped-OOF reference predictions (v6.1), and the prepared train/validation data (v7).
+- artifacts from earlier versions used by CoDiVE-KC: the split protocol and validation roles (v5), the MacBERT grouped-OOF reference predictions (v6.1), and the prepared train/validation data (v7).
 
 Paths in `codive/data.py` and `config/*.json` point to locations on our server and must be changed before running elsewhere.

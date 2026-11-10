@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CoDiVE-KC v8 stage 0: is there extractable visual evidence for top-5 reranking?
+"""CoDiVE-KC stage 0: is there extractable visual evidence for top-5 reranking?
 
 Data: v7 seed200408 prepared train/val (no test exists in prepared.pt). Text base
 is the frozen MacBERT reference (grouped OOF on train, full model on val).
@@ -27,7 +27,7 @@ from torch.nn import functional as F
 
 V7 = Path('/data/dyl/CoDiVE-KC-v7')
 sys.path.insert(0, str(V7))
-OUT = Path('/data/dyl/CoDiVE-KC-v8/stage0')
+OUT = Path('/data/dyl/CoDiVE-KC/stage0')
 MODEL = '/data/dyl/huggingface-cache/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/66285546d2b821cf421d4f5eb2576359d3770cd3'
 RESOLUTIONS = {'native': 100352, 'high': 401408}
 K, MAX_IMAGES = 5, 3

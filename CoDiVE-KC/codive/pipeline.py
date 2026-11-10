@@ -17,7 +17,7 @@ from torch.nn import functional as F
 
 from .backbone import QwenBackbone, BACKBONE_VERSION
 from .data import load_test_after_freeze, RENDERER_VERSION
-from .heads import ConceptHead, PairEvidenceHead, classification_loss, V8_LOSS
+from .heads import ConceptHead, PairEvidenceHead, classification_loss, CONCEPT_EVIDENCE_LOSS
 from .io import now, read_json, write_json, save_tensor, sha256, fingerprint, seed_all, stable_topk, canonical_text
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -83,7 +83,7 @@ class Model(nn.Module):
         h, c = self.semantics.shape[1], len(self.semantics)
         self.concept = ConceptHead(self.semantics).cuda()
         if cfg['variant'] == 'concept_evidence':
-            # v8: concept-pair evidence read from the question's own token states on every
+            # Concept-pair evidence read from the question's own token states on every
             # row, plus the same readout over image tokens on image rows. Open gate (0.5)
             # and a wider residual bound than v7, whose gate collapsed to ~0.01.
             self.evidence = PairEvidenceHead(h, c, max_residual=3.0, gate_bias=0.0).cuda()
@@ -115,7 +115,7 @@ class Model(nn.Module):
         return (hq, base, states, mask) if tokens else (hq, base)
 
     def concept_evidence(self, hq, states, mask, image_tokens, image_mask, candidates):
-        """v8 residuals over the candidates: (question-token evidence, image-token evidence)."""
+        """Concept-evidence residuals over the candidates: (question-token evidence, image-token evidence)."""
         with torch.autocast('cuda', enabled=False):
             delta_q, _ = self.evidence(hq.float(), self.semantics, states, mask, candidates)
             if image_mask is not None and bool(image_mask.any()):
@@ -237,7 +237,7 @@ def evaluate(model, cfg, rows, reference, cache, settings, status=None):
 
 
 def teacher_test(cfg, rows, prepared):
-    # v8: the seed-matched full reference recorded in prepared provenance (v7 hard-coded
+    # Use the seed-matched full reference recorded in prepared provenance (v7 hard-coded
     # the seed200408 folder, which failed every other seed's final-test guard).
     full = next(x for x in prepared['reference']['provenance'] if x['stage'] == 'full')
     folder = Path(full['checkpoint_path']).resolve().parent
@@ -366,7 +366,7 @@ def run(cfg, device='cuda:0'):
                             candidates = stable_topk(base.detach(), min(cfg['candidate_k'], base.shape[-1]))
                             delta_q, delta_v = model.concept_evidence(hq, states, qmask, tokens, mask, candidates)
                             fused = base + delta_q + delta_v
-                            loss_weights = V8_LOSS
+                            loss_weights = CONCEPT_EVIDENCE_LOSS
                         elif cfg['variant'] == 'pair_evidence':
                             tokens, mask = cache.batch(batch, epoch=epoch, training=True)
                             candidates = stable_topk(base.detach(), min(cfg['candidate_k'], base.shape[-1]))

@@ -93,7 +93,7 @@ def analyze(path):
 def main():
     reports = [analyze(p) for p in sorted((HERE / 'dumps').glob('*.pt'))]
     (HERE / 'ablation_results.json').write_text(json.dumps(reports, ensure_ascii=False, indent=2))
-    lines = ['# v7 / v8 冻结模型证据开关消融与易混对分析', '',
+    lines = ['# v7 / CoDiVE-KC 冻结模型证据开关消融与易混对分析', '',
              'val_select 为验证集；test 为冻结后的事后分析（未用于任何选择）。fix/harm 相对同一冻结模型的文本基线（证据关）。', '']
     for r in reports:
         lines.append(f"## {r['variant']} {r['dataset']} seed{r['seed']}（冻结 mix={r['mix_weight']}，冻结强度={r['frozen_visual_scale']}）")

@@ -1,0 +1,5 @@
+dataset,variant,seed,split,status,n,ACC (%),Weighted-F1 (%),Macro-F1 (%),fix_count,harm_count,checkpoint_sha256,run_dir
+Math,concept_evidence,200408,test,TESTED,1221,77.23,77.27,74.31,0,2,0551c6338bdf3fd8f426375507c968419d01ea2fea02742856be8bce2d109962,/data/dyl/CoDiVE-KC/runs/Math/concept_evidence/seed200408
+Math,concept_evidence,200409,test,TESTED,1221,76.58,76.41,73.46,0,0,da7123ca7af79ab0177dc9ac0d359d2e4c005e952a8fdd8877ccaca8d4f8d324,/data/dyl/CoDiVE-KC/runs/Math/concept_evidence/seed200409
+Biology,concept_evidence,200408,test,TESTED,1393,78.18,77.76,75.23,0,0,e97c854074ee148a016e8bc7be981a321688570c874578d300586cb0d30b6d7e,/data/dyl/CoDiVE-KC/runs/Biology/concept_evidence/seed200408
+Biology,concept_evidence,200409,test,TESTED,1393,78.18,77.59,74.84,0,0,b60efb1d1098c75f32e74d0fcff89a36cd974d02f9f85c1d46c9970e369d55ea,/data/dyl/CoDiVE-KC/runs/Biology/concept_evidence/seed200409

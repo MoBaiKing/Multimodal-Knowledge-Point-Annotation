@@ -28,7 +28,7 @@ import torch
 from codive.io import fingerprint, now, read_json, sha256_file, write_json
 
 SUBJECTS = ("Math", "Biology")
-VARIANTS = ("concept_evidence",)  # v8; text_control baselines are the v7 runs (same text pipeline)
+VARIANTS = ("concept_evidence",)  # text_control baselines are the v7 runs (same text pipeline)
 SEEDS = (200408, 200409)
 REQUIRED_ARTIFACTS = ("best.pt", "frozen.json", "test_predictions.pt", "test_metrics.json", "val_calibration.json")
 METRIC_PROTOCOL = dict(primary="Weighted-F1 (%)", scale="percentage", decimal_places=2,

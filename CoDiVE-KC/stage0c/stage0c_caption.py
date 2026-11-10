@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CoDiVE-KC v8 stage 0c: image -> text (OCR + structure description), then the stage 0 probe.
+"""CoDiVE-KC stage 0c: image -> text (OCR + structure description), then the stage 0 probe.
 
 caption: Qwen2.5-VL-3B-Instruct (generation head, no training) describes each
          unique train/val_select image from the image alone (the question is
@@ -19,12 +19,12 @@ from pathlib import Path
 import torch
 from torch.nn import functional as F
 
-sys.path.insert(0, '/data/dyl/CoDiVE-KC-v8/stage0')
-sys.path.insert(0, '/data/dyl/CoDiVE-KC-v8/stage0b')
+sys.path.insert(0, '/data/dyl/CoDiVE-KC/stage0')
+sys.path.insert(0, '/data/dyl/CoDiVE-KC/stage0b')
 import stage0_probe as s0  # noqa: E402
 import stage0b_joint as s0b  # noqa: E402
 
-OUT = Path('/data/dyl/CoDiVE-KC-v8/stage0c')
+OUT = Path('/data/dyl/CoDiVE-KC/stage0c')
 PIXELS = s0.RESOLUTIONS['high']
 PROMPT = {
     'Math': '这是一道中学数学题的配图。请只根据图片：1）逐字写出图中所有文字、字母、数字和标注；'

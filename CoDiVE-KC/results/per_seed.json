@@ -12,7 +12,7 @@
   "verified_runs": 4,
   "invalid_tested_runs": [],
   "unfinished_runs": [],
-  "collection_fingerprint": "6ef2004f7aee548f0f11663378c46b4152c6e8c8f81eb1b56a28e702810f16be",
+  "collection_fingerprint": "fec1b201e42b568807b23254aa4458df05106acb374f3fa85bc38327a81050ae",
   "runs": [
     {
       "dataset": "Math",
@@ -37,7 +37,7 @@
         "test_metrics.json": "3d1e635d22699940abd4e10454e662aeadec3dc5c6a0a2263385ec5979130cf0",
         "val_calibration.json": "6a8d157f7485f3ad359c4ea8fe818ca4faca378fc2e663384e1f1c8c0126ecba"
       },
-      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Math/concept_evidence/seed200408",
+      "run_dir": "/data/dyl/CoDiVE-KC/runs/Math/concept_evidence/seed200408",
       "fix_count": 0,
       "harm_count": 2,
       "device": "cuda:0"
@@ -65,7 +65,7 @@
         "test_metrics.json": "17d3423af0b38e8a7ac9269b1a6092d5fe62c50b19d985a58ee17c1c27803020",
         "val_calibration.json": "3da5c126f3a0fcbe0b589a8dbec92f434c54ca2b971be4cfdfa3968af0910b78"
       },
-      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Math/concept_evidence/seed200409",
+      "run_dir": "/data/dyl/CoDiVE-KC/runs/Math/concept_evidence/seed200409",
       "fix_count": 0,
       "harm_count": 0,
       "device": "cuda:0"
@@ -93,7 +93,7 @@
         "test_metrics.json": "493e78005ffe804c95490322cfbc36771f3029ad0060fe79851a532868416d9a",
         "val_calibration.json": "2e8c79d20624d4b02ea4947c048beccefae29fa681933285a2d03d5dbe81bbc9"
       },
-      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Biology/concept_evidence/seed200408",
+      "run_dir": "/data/dyl/CoDiVE-KC/runs/Biology/concept_evidence/seed200408",
       "fix_count": 0,
       "harm_count": 0,
       "device": "cuda:0"
@@ -121,7 +121,7 @@
         "test_metrics.json": "f86b02cc3218a7885656e6a66628aeb47a46ab0f878259a048a933d9ff000ba4",
         "val_calibration.json": "b57c0b36f5e2e98152b53f4186cb5eeaab4bc175551dfacc2976d5732fdd2491"
       },
-      "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Biology/concept_evidence/seed200409",
+      "run_dir": "/data/dyl/CoDiVE-KC/runs/Biology/concept_evidence/seed200409",
       "fix_count": 0,
       "harm_count": 0,
       "device": "cuda:0"

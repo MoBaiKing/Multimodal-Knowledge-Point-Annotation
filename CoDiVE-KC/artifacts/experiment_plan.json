@@ -13,7 +13,7 @@
   "Math/concept_evidence/seed200409",
   "Biology/concept_evidence/seed200409"
  ],
- "authorization": "2026-11-01 用户要求直接设计 v8 并上卡训练；v8 以文本侧为主（阶段 0/0b/0c 显示图像在验证集上无可用信息），保留图像证据头作为可检验分量",
+ "authorization": "2026-11-01 用户要求直接设计 CoDiVE-KC 并上卡训练；CoDiVE-KC 以文本侧为主（阶段 0/0b/0c 显示图像在验证集上无可用信息），保留图像证据头作为可检验分量",
  "pretrained": {
   "/data/dyl/huggingface-cache/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/66285546d2b821cf421d4f5eb2576359d3770cd3/chat_template.json": "ad60d90252ed0b0705ba14e2d0ad0fec0beac1ea955642b54059b36052d8bc96",
   "/data/dyl/huggingface-cache/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/66285546d2b821cf421d4f5eb2576359d3770cd3/config.json": "7ed3eed5be6924cc800e8a5e53fc405c1aab1aaf36bad65c33403b36c56827f5",
@@ -29,11 +29,11 @@
  },
  "learner_sources": {
   "codive/__init__.py": "e4428e9cd90eac216ba5e478a5fde3d1796bcf729dc90f4911fc50f8f5d3d484",
-  "codive/backbone.py": "4674c9b98fdc7a17af91664d1dccbf38e0aad730c68cab7c3799311e49fcaf05",
+  "codive/backbone.py": "0c9c7ea0efd4528a2dc59613b3a591c66f21a356ef255816056e4813a5a1c423",
   "codive/data.py": "c60d2ee99b0e114825577b1550c0101fa038ed6c802d9b2357bf04fe18accf5d",
-  "codive/heads.py": "3f912d3eba3e24724249c006ca2ffac49b93ba2083b703b48978c54f6f246e0a",
+  "codive/heads.py": "85795f3855be91050c963c2fc9e8ef4a83d93cbd0e799a7c255838bb0068f94a",
   "codive/io.py": "629064d8339549f823fe83b1357234ab492a9bd8521310b5bd6ced41ba9baf53",
-  "codive/pipeline.py": "6af787147a4ab06bfebf899983e6c80231f1b4f91cab2ea0672efdacd79a7012"
+  "codive/pipeline.py": "9fcd55e748f6e29afbd9eae8afe19775dda39c44c7f71b48eb8eb8359322af47"
  },
  "runtime": "Project .venv: torch2.2.2 CUDA12.1, transformers4.57.1, peft0.17.1",
  "training": {
@@ -81,7 +81,7 @@
    1
   ],
   "patience": 2,
-  "visual_scale_grid_meaning": "v8: scale of the total evidence residual (question + image)"
+  "visual_scale_grid_meaning": "Scale of the total evidence residual (question + image)"
  },
  "final_test": {
   "automatic": true,
@@ -103,7 +103,7 @@
   "image_head_zero_without_images": true,
   "question_evidence_on_all_rows": true
  },
- "claims": "v8 tests whether concept-pair evidence read from the question itself improves over v7 text_control (same text pipeline/protocol, reused as baseline). Image head contribution is reported as a frozen-model ablation; no claim that images help unless that ablation shows it.",
+ "claims": "CoDiVE-KC tests whether concept-pair evidence read from the question itself improves over v7 text_control (same text pipeline/protocol, reused as baseline). Image head contribution is reported as a frozen-model ablation; no claim that images help unless that ablation shows it.",
  "citations": [
   "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct",
   "https://arxiv.org/abs/2502.13923",

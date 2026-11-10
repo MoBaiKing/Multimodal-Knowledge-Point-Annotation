@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """冻结 checkpoint 的证据分量导出（只推理，不训练、不选择）。
 
-对一个已 TESTED 的 v7 pair_evidence 或 v8 concept_evidence 运行，在 val_select 与 test 上逐行导出：
+对一个已 TESTED 的 v7 pair_evidence 或 concept_evidence 运行，在 val_select 与 test 上逐行导出：
 文本基线 base = mix(student, teacher, 冻结 mix_weight)、top-k 候选，以及
-  v8：题干证据残差 delta_q 与图片证据残差 delta_v（未乘视觉强度）
+  concept_evidence：题干证据残差 delta_q 与图片证据残差 delta_v（未乘视觉强度）
   v7：图片证据残差 delta_v（delta_q 恒 0）
 无图行的 delta_v 置 0（与原推理的无图回退一致），并记录置零前的最大绝对值以供核查。
 test 只用于冻结后的事后分析；所有开关组合离线计算，不回写任何选择。
@@ -57,9 +57,9 @@ def main():
     cache = P.VisionCache(cfg, model, plan['pretrained'])
     w = float(frozen['mix_weight'])
     k = cfg['candidate_k']
-    v8 = cfg['variant'] == 'concept_evidence'
+    is_concept_evidence = cfg['variant'] == 'concept_evidence'
 
-    # 种子匹配的教师 test 缓存（与 v8 teacher_test / v7 seed200409 补测相同的核验）
+    # 种子匹配的教师 test 缓存（与 concept_evidence teacher_test / v7 seed200409 补测相同的核验）
     full = next(x for x in reference['provenance'] if x['stage'] == 'full')
     folder = Path(full['checkpoint_path']).resolve().parent
     done = read_json(folder / 'complete.json')
@@ -89,7 +89,7 @@ def main():
         for start in range(0, len(rows), cfg['eval_batch']):
             batch = rows[start:start + cfg['eval_batch']]
             with torch.no_grad(), torch.autocast('cuda', dtype=torch.bfloat16):
-                if v8:
+                if is_concept_evidence:
                     hq, student, states, qmask = model.text([r['text'] for r in batch], tokens=True)
                 else:
                     hq, student = model.text([r['text'] for r in batch])
@@ -97,7 +97,7 @@ def main():
                 cands = topk(base, min(k, base.shape[-1]))
                 tokens, mask = cache.batch(batch)
                 has = mask.any(-1) if mask is not None else torch.zeros(len(batch), dtype=torch.bool, device=base.device)
-                if v8:
+                if is_concept_evidence:
                     dq, dv = model.concept_evidence(hq, states, qmask, tokens, mask, cands)
                 else:
                     dq = torch.zeros_like(base)

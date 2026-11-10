@@ -159,9 +159,9 @@ class PairEvidenceHead(nn.Module):
 
 
 V7_LOSS = dict(base_ce=0.5, nearest_rival=0.1, rival_margin=0.2, preserve_correct=0.2, mismatch_kl=0.05)
-# v8: v7's preserve-correct and mismatched-image terms drove the evidence gate to ~0.01
-# (val_select diagnostics, 2026-10-31); v8 drops them and leans on the nearest rival.
-V8_LOSS = dict(base_ce=0.5, nearest_rival=0.2, rival_margin=0.5, preserve_correct=0.0, mismatch_kl=0.0)
+# v7's preserve-correct and mismatched-image terms drove the evidence gate to ~0.01
+# (val_select diagnostics, 2026-10-31); this loss drops them and leans on the nearest rival.
+CONCEPT_EVIDENCE_LOSS = dict(base_ce=0.5, nearest_rival=0.2, rival_margin=0.5, preserve_correct=0.0, mismatch_kl=0.0)
 
 
 def classification_loss(base: Tensor, fused: Tensor, y: Tensor,

@@ -170,7 +170,7 @@ class QwenBackbone(nn.Module):
         return self._encode_texts(texts)
 
     def encode_question_states(self, texts: Sequence[str]) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
-        """v8: pooled [B, H] state plus all [B, T, H] question token states and [B, T] mask.
+        """Pooled [B, H] state plus all [B, T, H] question token states and [B, T] mask.
 
         Same forward as ``encode_questions``; token states keep gradients to LoRA
         so the concept-pair evidence head can shape the question encoding.

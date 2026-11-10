@@ -11,15 +11,15 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 PY = '/data/dyl/CoDiVE-KC-v7/.venv/bin/python'
-V7, V8 = Path('/data/dyl/CoDiVE-KC-v7'), Path('/data/dyl/CoDiVE-KC-v8')
+V7, CODIVE = Path('/data/dyl/CoDiVE-KC-v7'), Path('/data/dyl/CoDiVE-KC')
 TZ = dt.timezone(dt.timedelta(hours=8))
-QUEUE_ID = 'codive_v7_v8_evidence_ablation_20261101'
+QUEUE_ID = 'codive_v7_concept_evidence_ablation_20261101'
 RES_ID = 454
 
 
 def job(version, ds, seed):
-    if version == 'v8':
-        root, cfg = V8, V8 / f'config/{ds.lower()}_concept_evidence_seed{seed}.json'
+    if version == 'concept_evidence':
+        root, cfg = CODIVE, CODIVE / f'config/{ds.lower()}_concept_evidence_seed{seed}.json'
     else:
         root = V7 if seed == 200408 else V7 / 'seed200409'
         cfg = V7 / ('config/' + f'{ds.lower()}_pair_evidence' + ('' if seed == 200408 else '_seed200409') + '.json')
@@ -30,10 +30,10 @@ def job(version, ds, seed):
                      '--out', str(HERE / 'dumps' / f'{name}.pt')])
 
 
-PLAN = {0: [job('v8', 'Math', 200408), job('v7', 'Math', 200408)],
-        1: [job('v8', 'Math', 200409), job('v7', 'Math', 200409)],
-        2: [job('v8', 'Biology', 200408), job('v7', 'Biology', 200408)],
-        3: [job('v8', 'Biology', 200409), job('v7', 'Biology', 200409)]}
+PLAN = {0: [job('concept_evidence', 'Math', 200408), job('v7', 'Math', 200408)],
+        1: [job('concept_evidence', 'Math', 200409), job('v7', 'Math', 200409)],
+        2: [job('concept_evidence', 'Biology', 200408), job('v7', 'Biology', 200408)],
+        3: [job('concept_evidence', 'Biology', 200409), job('v7', 'Biology', 200409)]}
 JOBS = [j for js in PLAN.values() for j in js]
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CoDiVE-KC v8 stage 0b: does joint image+question encoding expose usable evidence?
+"""CoDiVE-KC stage 0b: does joint image+question encoding expose usable evidence?
 
 Base Qwen2.5-VL-3B (adapters off, no training of the backbone) encodes each
 image row twice through the identical chat template: question only (hq_txt)
@@ -18,10 +18,10 @@ from pathlib import Path
 import torch
 from torch.nn import functional as F
 
-sys.path.insert(0, '/data/dyl/CoDiVE-KC-v8/stage0')
+sys.path.insert(0, '/data/dyl/CoDiVE-KC/stage0')
 import stage0_probe as s0  # noqa: E402
 
-OUT = Path('/data/dyl/CoDiVE-KC-v8/stage0b')
+OUT = Path('/data/dyl/CoDiVE-KC/stage0b')
 
 
 def donors(part):

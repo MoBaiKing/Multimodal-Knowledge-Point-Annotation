@@ -9,12 +9,12 @@ import json
 import sys
 from pathlib import Path
 
-sys.path.insert(0, '/data/dyl/CoDiVE-KC-v8/stage0')
-sys.path.insert(0, '/data/dyl/CoDiVE-KC-v8/stage0b')
+sys.path.insert(0, '/data/dyl/CoDiVE-KC/stage0')
+sys.path.insert(0, '/data/dyl/CoDiVE-KC/stage0b')
 import stage0_probe as s0  # noqa: E402
 import stage0b_joint as s0b  # noqa: E402
 
-HERE = Path('/data/dyl/CoDiVE-KC-v8/stage0c')
+HERE = Path('/data/dyl/CoDiVE-KC/stage0c')
 
 
 def grams(text):

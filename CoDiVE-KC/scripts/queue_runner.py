@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""CoDiVE-KC v8 JNU train and final GPU test queue: live bookings, independent GPU slots and GPU final tests.
+"""CoDiVE-KC JNU train and final GPU test queue: live bookings, independent GPU slots and GPU final tests.
 
 No GPU work is performed by --check or --publish-only. A live runner publishes
 the full stable-ID FocusForge queue before launching any worker. The pipeline
@@ -472,8 +472,8 @@ class Runner:
             worker = self.workers.get(job["id"])
             window = window_for(rows, worker.gpu, point) if rows is not None and worker else future
             reference = job.get("kind", "main") == "reference"
-            title = (f"CoDiVE-KC v8 {job['dataset']} seed{job['seed']} OOF 5-fold 辅助（同一种子）" if reference
-                     else f"CoDiVE-KC v8 {job['dataset']} seed{job['seed']}")
+            title = (f"CoDiVE-KC {job['dataset']} seed{job['seed']} OOF 5-fold 辅助（同一种子）" if reference
+                     else f"CoDiVE-KC {job['dataset']} seed{job['seed']}")
             title = job.get('title', title)
             jobs.append(dict(id=job["id"], title=title,
                              family=job.get('family', "DIVE-KC-v4-reference" if reference else "DIVE-KC-v4"), dataset=job["dataset"], seed=job["seed"], status=row["status"],

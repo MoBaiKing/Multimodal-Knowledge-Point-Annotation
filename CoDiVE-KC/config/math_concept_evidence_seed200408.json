@@ -1,6 +1,6 @@
 {
   "model_path": "/data/dyl/huggingface-cache/hub/models--Qwen--Qwen2.5-VL-3B-Instruct/snapshots/66285546d2b821cf421d4f5eb2576359d3770cd3",
-  "seed": 200409,
+  "seed": 200408,
   "epochs": 3,
   "patience": 2,
   "microbatch": 2,
@@ -24,9 +24,9 @@
   "candidate_k": 5,
   "dataset": "Math",
   "variant": "concept_evidence",
-  "prepared": "/data/dyl/CoDiVE-KC-v7/seed200409/data/Math/prepared.pt",
-  "prepared_manifest": "/data/dyl/CoDiVE-KC-v7/seed200409/data/Math/prepared.json",
-  "run_dir": "/data/dyl/CoDiVE-KC-v8/runs/Math/concept_evidence/seed200409",
+  "prepared": "/data/dyl/CoDiVE-KC-v7/data/Math/prepared.pt",
+  "prepared_manifest": "/data/dyl/CoDiVE-KC-v7/data/Math/prepared.json",
+  "run_dir": "/data/dyl/CoDiVE-KC/runs/Math/concept_evidence/seed200408",
   "visual_scale_grid": [
     0,
     0.5,
