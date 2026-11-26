@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cber-kc"
+version = "1.0.0"
+description = "Class-Balanced Exemplar Reranking for Multimodal Knowledge Concept Labeling"
+requires-python = ">=3.10"
+dependencies = ["torch>=2.6"]
+
+[project.optional-dependencies]
+encoder = ["transformers==4.57.1", "peft==0.17.1", "Pillow>=10", "numpy>=1.26"]
+
+[project.scripts]
+cber-kc = "cber_kc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cber_kc*"]

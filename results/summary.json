@@ -1,0 +1,124 @@
+{
+  "main_seeds": [
+    200404,
+    200405,
+    200406,
+    200407,
+    200408
+  ],
+  "separate_reference_seed": 200409,
+  "results": [
+    {
+      "method": "CBER-KC",
+      "dataset": "Math",
+      "split": "val_select",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 78.03,
+        "sample_std": 0.7
+      },
+      "weighted_f1_pct": {
+        "mean": 77.86,
+        "sample_std": 0.65
+      }
+    },
+    {
+      "method": "CBER-KC",
+      "dataset": "Math",
+      "split": "val_calibration",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 78.0,
+        "sample_std": 0.5
+      },
+      "weighted_f1_pct": {
+        "mean": 77.98,
+        "sample_std": 0.56
+      }
+    },
+    {
+      "method": "CBER-KC",
+      "dataset": "Math",
+      "split": "test",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 77.48,
+        "sample_std": 0.53
+      },
+      "weighted_f1_pct": {
+        "mean": 77.11,
+        "sample_std": 0.48
+      }
+    },
+    {
+      "method": "CBER-KC",
+      "dataset": "Math",
+      "split": "test_excluding_train_overlap",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 77.46,
+        "sample_std": 0.53
+      },
+      "weighted_f1_pct": {
+        "mean": 77.07,
+        "sample_std": 0.47
+      }
+    },
+    {
+      "method": "CBER-KC",
+      "dataset": "Biology",
+      "split": "val_select",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 81.47,
+        "sample_std": 0.49
+      },
+      "weighted_f1_pct": {
+        "mean": 80.95,
+        "sample_std": 0.49
+      }
+    },
+    {
+      "method": "CBER-KC",
+      "dataset": "Biology",
+      "split": "val_calibration",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 79.02,
+        "sample_std": 1.14
+      },
+      "weighted_f1_pct": {
+        "mean": 78.91,
+        "sample_std": 1.03
+      }
+    },
+    {
+      "method": "CBER-KC",
+      "dataset": "Biology",
+      "split": "test",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 78.09,
+        "sample_std": 0.48
+      },
+      "weighted_f1_pct": {
+        "mean": 77.74,
+        "sample_std": 0.52
+      }
+    },
+    {
+      "method": "CBER-KC",
+      "dataset": "Biology",
+      "split": "test_excluding_train_overlap",
+      "runs": 5,
+      "accuracy_pct": {
+        "mean": 79.03,
+        "sample_std": 0.19
+      },
+      "weighted_f1_pct": {
+        "mean": 78.79,
+        "sample_std": 0.24
+      }
+    }
+  ]
+}

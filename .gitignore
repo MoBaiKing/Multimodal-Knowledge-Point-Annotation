@@ -1,8 +1,11 @@
 __pycache__/
-*.pyc
-*.pt
-*.pth
-*.safetensors
-*.log
-cache/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+build/
+dist/
 runs/
+inputs/
+*.pt
+*.safetensors
